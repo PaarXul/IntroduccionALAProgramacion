@@ -1,0 +1,18 @@
+public class Main {
+    public static void main(String[] args) {
+
+        int a, b, c;
+
+        a=5;
+        b=10;
+        c=7;
+
+        System.out.println("El Resultado de la suma de las variables " +"A = "+a+", B= "+b+"y C="+c+" es de:"+suma_tres_variables(a,b,c) );
+
+    }
+    static int suma_tres_variables (int a,int b, int c){
+        int resultado;
+        resultado= a+b+c;
+
+        return resultado;
+    }
