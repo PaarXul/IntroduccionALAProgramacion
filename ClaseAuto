@@ -1,0 +1,21 @@
+public class Claseauto {
+    private  int puertas;
+
+    public Claseauto(int puertas){
+        this.puertas = puertas;
+    }
+
+    public void  añadirPuertas(int puertas){
+        this.puertas += puertas;
+
+    }
+
+    public void imprimirInfo(){
+        System.out.println("Puertas del auto son: " + puertas);
+    }
+    public static void  main (String [] args){
+        Claseauto coche = new Claseauto(5);
+        coche.añadirPuertas(4);
+        coche.imprimirInfo();
+    }
+}
