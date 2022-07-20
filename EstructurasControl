@@ -1,0 +1,65 @@
+public class EstructurasControl {
+
+    public static void  usandoIf(int numeroif) {
+        if(numeroif<1){
+            System.out.println("Positivo");
+        }else if (numeroif >-1){
+            System.out.println("Negativo");
+        }else if(numeroif==0){
+            System.out.println("Es 0");
+        }
+    }
+    public static void usandoWhile(int numeroWhile){
+
+        while (numeroWhile>3){
+            numeroWhile++;
+            System.out.println(numeroWhile);
+        }
+    }
+    public static void usandoDoWhile(int numerodowhile) {
+        do {
+            numerodowhile++;
+            System.out.println(numerodowhile);
+        } while (numerodowhile>3);
+    }
+    public static void usandoFor(int numerofor){
+        for(numerofor=0;numerofor>=3;numerofor++){
+            numerofor++;
+            System.out.println(numerofor);
+        }
+    }
+    public static void usandoCase(int numerocase){
+
+        switch(numerocase){
+            case 1:
+                System.out.println("Verano");
+                break;
+            case 2:
+                System.out.println("Invierno");
+                break;
+            case 3:
+                System.out.println("Primavera");
+                break;
+            case 4:
+                System.out.println("Otoño");
+            default:
+                System.out.println("no de encuentra alguna estacion entre las variables.");
+        }
+
+    }
+
+public static void main(String [] args){
+    int numeroif = 0;
+    int numerowhile=0;
+    int numerodowhile=0;
+    int numerofor=0;
+    int numerocase=1;
+
+    usandoIf(numeroif);
+    usandoWhile(numerowhile);
+    usandoDoWhile(numerodowhile);
+    usandoFor(numerofor);
+    usandoCase(numerocase);
+}
+
+}
