@@ -1,0 +1,36 @@
+public class Persona {
+    private String nombre;
+    private int edad;
+    private int telefono;
+
+    public int getEdad() {
+        return edad;
+    }
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+    public int getTelefono() {
+        return telefono;
+    }
+    public void setTelefono(int telefono) {
+        this.telefono = telefono;
+    }
+    public String getNombre(){
+        return nombre;
+    }
+    public void setNombre(String nuevoNombre){
+        nombre = nuevoNombre;
+    }
+
+    public static void main(String [] args){
+        Persona persona = new Persona();
+        persona.setNombre("Peter Parker");
+        persona.setEdad(22);
+        persona.setTelefono(98765432);
+
+        System.out.println("El nombre de la nueva persona ingresa es: "+ persona.getNombre());
+        System.out.println("Tiene "+persona.getEdad()+" años de Edad");
+        System.out.println("Se le puede ubicar con este numero de telefono "+persona.getTelefono());
+    }
+
+}
